@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Nimish</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Nimish</span><br> Software Developer</h1>
+
+                    <a href="mailto:sarinnimish28102003@gmail.com"  class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/nimish-sarin-237577239" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                  
+                    <a href="https://github.com/sarinnimish" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="0" y="0" width="490" height="467" href="\images\nimmi2.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+
+                    
+                    <div class="box1">
+                        <h2 class="about__subtitle" >Hello My Name is Nimish </h2>
+                        <p  style="text-align: left;"  class="about__text">I'm from Dholpur,Rajasthan. Currently pursuing B.Tech CSE From JECRC University.
+                            A motivated student seeking an opportunity to gain valuable experience and contribute to a
+                            dynamic organization.To achieve high career growth through a continuous learning process, keep
+                            myself dynamic. Eager to learn and contribute to a team, while furthering personal and professional
+                            growth.</p> 
+                    </div>
+                    <div class="box2">
+                            <a  href="Nimish resume.pdf" download class="resume">Download Resume
+                                <span></span></a>          
+                    </div>     
+                    <script>
+                        let button=document.querySelector("body a");
+                        button.addEventListener("click",()=>{
+                            const span=document.querySelector("a span");
+                            button.style.paddingRight='10px';
+                            span.style.visibility="visible";
+                            setTimeout(()=>{
+                            button.style.visibility="hidden";
+                            button.style.transition="Is ease-in-out"; 
+                            button.style.paddingRight="0px";
+                            },3000);
+                        })
+                    </script>                              
+                
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Technical Skills</h2>
+                        <p class="skills__text">These skills include proficiency in programming languages , software applications , data analysis tools, and specialized equipment or machinery.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                               
+                                <span class="skills__name">C/C++</span>
+                            </div>
+                            <div class="skills__bar skills__c">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                               
+                                <span class="skills__name">Data structure and algorithm</span>
+                            </div>
+                            <div class="skills__bar skills__dsa">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                               
+                                <span class="skills__name">SQL</span>
+                            </div>
+                            <div class="skills__bar skills__sql">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                              
+                                <span class="skills__name">HTML/CSS</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== Projects =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <h1 class="project_name"> Podcast Streaming Website </h1>
+                    </h2> This podcast streaming website project aims to provide a user-friendly platform for 
+                        discovering, accessing, and enjoying a diverse range of podcasts </h2>
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <h1 class="project_name"> Coffee Machine </h1>
+                    </h2> A coffeemaker, coffee maker or coffee machine is a cooking appliance used to brew coffee. The
+                        machine works with typical products: coffee, milk, sugar, and plastic cups</h2>
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <h1 class="project_name"> Portfolio Website </h1>
+                    </h2> A portfolio website is a curated, online space that showcases your best work. It's one of the most practical and memorable ways to share your work with press, potential collaborators or employers.</h2>
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <!-- <section class="contact section" id="contact"></section/> -->
+            <div class="contact section part1 flex items-center min-h-screen bg-gray-50 dark:bg-gray-900" id="contact">
+                <div class="part2 container mx-auto">
+                  <div class="part3 max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+                    <!-- <div class="part4 text-center"> -->
+                      <h1 class="part45 section-title my-3 text-3xl font-semibold text-gray-700 dark:text-grey-200">
+                        Contact
+                      </h1>
+                      <p class="part5 text-gray-400 dark:text-gray-400">
+                        Fill up the form below to send me a message.
+                      </p>
+                    <!-- </div> -->
+                    <div class="part6 m-7">
+                      <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                        <input type="hidden" name="access_key" value="4e820d07-aa22-406b-9467-973e0e48fc57" />
+                        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                    </div>
+                        <div class="part7 mb-6">
+                          <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label>
+                          <input type="text" name="name" id="name" placeholder="Your Name" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                        </div>
+                        <div class="part8 mb-6">
+                          <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+                          <input type="email" name="email" id="email" placeholder="your email" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                        </div>
+                        <div class="part9 mb-6">
+                          <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+              
+                          <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+                        </div>
+                        <div class="part10 mb-6">
+                          <button type="submit" class="button w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                            Send 
+                          </button>
+                        </div>
+                        <p class="part11 text-base text-center text-gray-400" id="result"></p>
+                      </form>
+                    
+                  </div>
+                </div>
+              </div>
+              
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Nimish</p>
+            <div class="footer__social">
+                <a href="https://m.facebook.com/profile.php?id=100035087928766" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/sarinnimish?igsh=bDI1bm0yMTBsNHho" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://x.com/sarin_nimish" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169;  All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="script.js"></script>
+    </body>
+</html>
