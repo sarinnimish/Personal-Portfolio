@@ -1,1 +1,1 @@
-# Personal-Portfolio
+Welcome to my personal portfolio repository! This repository showcases my projects, skills, and professional achievements. It serves as a digital resume to highlight my experience and capabilities. It includes HTML, CSS, and JavaScript. This project provides a sleek and responsive personal portfolio template. The design is modern and customizable, with smooth navigation and interactive elements to enhance user experience.
