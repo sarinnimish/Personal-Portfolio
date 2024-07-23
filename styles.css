@@ -499,9 +499,13 @@ img {
     display: grid;
     /* align-items: center; */
     justify-content: center;
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
 .part3{
+  /* box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
     display: grid;
     height: 350px;
     width: 100%;
