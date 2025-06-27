@@ -134,6 +134,9 @@ img {
     transition: 0.5s;
   }
 }
+.nav__item a{
+  color:white;
+}
 .nav__item {
   margin-bottom: var(--mb-4);
 }
